@@ -39,7 +39,7 @@ class NetworkDataExtract():
             self.database = database
             self.records = records
             self.collection = Collection
-            self.mongo_client = pymongo.MongoClient(MONGO_DB_URL, tlsCAFile=ca)
+            self.mongo_client = pymongo.MongoClient(MONGO_DB_URL)
             
             self.database = self.mongo_client[self.database]
             self.collection = self.database[self.collection]
