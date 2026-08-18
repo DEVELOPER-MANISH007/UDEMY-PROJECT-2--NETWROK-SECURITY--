@@ -1,6 +1,6 @@
-form dataclasses import dataclasses
+from dataclasses import dataclass
 
-@dataclasses
+@dataclass
 class DataIngestionArtifact:
-    trained_file_path:str
-    test_file_path:str
+    trained_file_path: str
+    test_file_path: str
